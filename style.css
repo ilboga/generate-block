@@ -1,0 +1,32 @@
+:root {
+  --bg-inner: white;
+  --bg-outer: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;  
+  
+  svg {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+  svg * {
+    /*    Removes little gaps between the shapes */
+    shape-rendering: crispEdges;
+  }
+
+}
+.button {
+  position: absolute;
+  top: 0;
+  right: 0
+}
