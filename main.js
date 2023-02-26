@@ -5,7 +5,6 @@ import { random } from "https://cdn.skypack.dev/@georgedoescode/generative-utils
 console.clear();
 
 let draw, squareSize, numRows, numCols, colors, colorPalette;
-let giorno, mese, anno;
 
 const container = document.querySelector(".container")
 /*
@@ -43,10 +42,7 @@ function generateNewGrid() {
 async function drawGrid() {
   // Set Random Palette  
   colorPalette = random(colors);
-
-  squareSize = random(20, 100, true);
-
-  console.log(squareSize)
+  squareSize = random(2, 22, true);
   
   // Set Variables  
   const rect = container.getBoundingClientRect();
